@@ -17,23 +17,29 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.55, delay },
 })
 
-function Monogram() {
+function Portrait() {
   return (
     <div className="relative w-44 h-44 sm:w-56 sm:h-56 lg:w-64 lg:h-64">
+      {/* Glow halo behind */}
       <div
         aria-hidden="true"
         className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/40 via-violet-400/30 to-transparent blur-2xl"
       />
-      <div className="relative w-full h-full rounded-full glass-card-static flex items-center justify-center">
-        <div className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight">
-          <span className="text-accent">H</span>
-          <span className="text-accent2">S</span>
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 rounded-full border border-accent/30 animate-pulse-soft"
+      {/* Photo */}
+      <div className="relative w-full h-full rounded-full overflow-hidden ring-1 ring-slate-700/60">
+        <img
+          src="/headshot.png"
+          alt="Hossam Salah"
+          loading="eager"
+          decoding="async"
+          className="w-full h-full object-cover"
         />
       </div>
+      {/* Animated accent ring */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 rounded-full border border-accent/40 animate-pulse-soft pointer-events-none"
+      />
     </div>
   )
 }
@@ -186,7 +192,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="hidden lg:flex justify-center"
           >
-            <Monogram />
+            <Portrait />
           </motion.div>
         </div>
 
