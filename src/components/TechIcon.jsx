@@ -1,0 +1,78 @@
+import {
+  SiPython,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
+  SiLangchain,
+  SiSnowflake,
+  SiGit,
+  SiGithub,
+  SiJupyter,
+  SiOllama,
+  SiFastapi,
+  SiChartdotjs,
+  SiOpencv,
+  SiGooglecloud,
+} from 'react-icons/si'
+import {
+  TbDatabase,
+  TbChartBar,
+  TbChartLine,
+  TbBrain,
+  TbBinaryTree,
+  TbAdjustmentsAlt,
+  TbMessageChatbot,
+  TbHash,
+  TbFunction,
+  TbFilter,
+  TbUserMinus,
+  TbTestPipe,
+  TbMath,
+  TbCurrencyDollar,
+  TbBoltFilled,
+} from 'react-icons/tb'
+
+const map = {
+  python: SiPython,
+  pandas: SiPandas,
+  numpy: SiNumpy,
+  'scikit-learn': SiScikitlearn,
+  tensorflow: SiTensorflow,
+  langchain: SiLangchain,
+  snowflake: SiSnowflake,
+  git: SiGit,
+  github: SiGithub,
+  jupyter: SiJupyter,
+  ollama: SiOllama,
+  tableau: TbChartBar,
+  fastapi: SiFastapi,
+  chartjs: SiChartdotjs,
+  opencv: SiOpencv,
+  gcs: SiGooglecloud,
+  // No official simple-icons for these; use semantic Tabler icons
+  sql: TbDatabase,
+  powerbi: TbChartBar,
+  matplotlib: TbChartLine,
+  seaborn: TbChartLine,
+  xgboost: TbBoltFilled,
+  chromadb: TbDatabase,
+  ml: TbBrain,
+  forecast: TbChartLine,
+  cnn: TbBinaryTree,
+  features: TbAdjustmentsAlt,
+  tuning: TbAdjustmentsAlt,
+  nlp: TbMessageChatbot,
+  tfidf: TbHash,
+  funnel: TbFilter,
+  churn: TbUserMinus,
+  abtest: TbTestPipe,
+  stats: TbMath,
+  kpi: TbCurrencyDollar,
+}
+
+export default function TechIcon({ slug, size = 16, className = '' }) {
+  const Icon = map[slug]
+  if (!Icon) return null
+  return <Icon size={size} className={className} aria-hidden="true" />
+}

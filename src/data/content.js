@@ -13,111 +13,234 @@ export const identity = {
   cvPath: '/Hossam_Salah_CV.pdf',
 }
 
-export const heroStatement =
-  'Strategic Data Analyst specializing in data engineering and automation — turning messy multi-source healthcare data into forecasts, dashboards, and decisions that move revenue.'
+// Three short specialty chips shown directly under the name in the hero.
+export const specialties = [
+  'Data Pipelines',
+  'Forecasting',
+  'BI Dashboards',
+]
 
-export const aboutSummary =
-  'Strategic Data Analyst specializing in Data Engineering & Automation. Engineered pipelines consolidating 900+ disparate sources, improved forecasting accuracy by 27%, and identified $30K in annual cost savings through patient acquisition analysis. Shifted a multi-region expansion strategy by diagnosing an 11% retention drop and proving new clinic cohorts outperformed historical benchmarks by 29%.'
+// Two-sentence hero pitch. First sentence: what I do. Second: the outcome.
+export const heroStatement =
+  'I turn messy multi-source healthcare data into pipelines, forecasts, and dashboards. The work moves revenue, surfaces savings, and gives leadership numbers they can act on.'
+
+// Headline metric strip rendered in the hero. Each value animates from 0.
+export const heroMetrics = [
+  { value: 27, suffix: '%', prefix: '+', label: 'forecast accuracy lift' },
+  { value: 30, suffix: 'K', prefix: '$', label: 'annual savings surfaced' },
+  { value: 900, suffix: '+', prefix: '', label: 'data sources unified' },
+  { value: 10, suffix: '+', prefix: '', label: 'hrs/week reclaimed' },
+]
+
+// Tech logo bar shown in the hero. Icons resolved by slug in Hero.jsx.
+export const heroStack = [
+  { slug: 'python', label: 'Python' },
+  { slug: 'sql', label: 'SQL' },
+  { slug: 'snowflake', label: 'Snowflake' },
+  { slug: 'powerbi', label: 'Power BI' },
+  { slug: 'xgboost', label: 'XGBoost' },
+  { slug: 'tensorflow', label: 'TensorFlow' },
+]
+
+// One line "Currently building" signal in the hero.
+export const currentlyBuilding =
+  'Now shipping the PTOC Intelligence Hub: a Snowflake plus FastAPI dashboard for a 30 clinic network.'
+
+// Short two-sentence intro above the About stat tiles.
+export const aboutIntro =
+  'I work at the seam between raw data and the decisions a business actually makes. My focus is data engineering, automation, and forecasting in US healthcare.'
+
+// Three glass stat tiles rendered inside About.
+export const aboutStats = [
+  {
+    value: '900+',
+    label: 'disparate sources consolidated',
+    detail: 'Engineered pipelines that unify scheduling, billing, and clinical feeds.',
+  },
+  {
+    value: '+27%',
+    label: 'forecasting accuracy gain',
+    detail: 'Time series models on 10K+ weekly records for a 30 clinic network.',
+  },
+  {
+    value: '$30K',
+    label: 'inefficient spend surfaced',
+    detail: 'Cohort analysis that pivoted strategy from acquisition to retention.',
+  },
+]
 
 export const skills = [
   {
     category: 'Programming & ML',
     items: [
-      'Python (Pandas, NumPy, Scikit-learn, TensorFlow, LangChain)',
-      'SQL',
-      'ETL/ELT',
+      { name: 'Python', slug: 'python' },
+      { name: 'SQL', slug: 'sql' },
+      { name: 'Pandas', slug: 'pandas' },
+      { name: 'NumPy', slug: 'numpy' },
+      { name: 'Scikit-learn', slug: 'scikit-learn' },
+      { name: 'TensorFlow', slug: 'tensorflow' },
+      { name: 'LangChain', slug: 'langchain' },
     ],
   },
   {
     category: 'Machine Learning',
     items: [
-      'Supervised/Unsupervised Learning',
-      'Time Series Forecasting',
-      'Deep Learning (CNN)',
-      'Feature Engineering',
-      'Hyperparameter Tuning',
-      'RAG/NLP',
-      'TF-IDF',
+      { name: 'Supervised/Unsupervised', slug: 'ml' },
+      { name: 'Time Series Forecasting', slug: 'forecast' },
+      { name: 'Deep Learning (CNN)', slug: 'cnn' },
+      { name: 'Feature Engineering', slug: 'features' },
+      { name: 'Hyperparameter Tuning', slug: 'tuning' },
+      { name: 'RAG/NLP', slug: 'nlp' },
+      { name: 'TF-IDF', slug: 'tfidf' },
     ],
   },
   {
     category: 'Data Platforms & Tools',
-    items: ['Snowflake', 'Git/GitHub', 'Jupyter', 'Ollama', 'ChromaDB'],
+    items: [
+      { name: 'Snowflake', slug: 'snowflake' },
+      { name: 'Git', slug: 'git' },
+      { name: 'GitHub', slug: 'github' },
+      { name: 'Jupyter', slug: 'jupyter' },
+      { name: 'Ollama', slug: 'ollama' },
+      { name: 'ChromaDB', slug: 'chromadb' },
+    ],
   },
   {
     category: 'Visualization & BI',
-    items: ['Power BI', 'Tableau', 'Matplotlib', 'Seaborn'],
+    items: [
+      { name: 'Power BI', slug: 'powerbi' },
+      { name: 'Tableau', slug: 'tableau' },
+      { name: 'Matplotlib', slug: 'matplotlib' },
+      { name: 'Seaborn', slug: 'seaborn' },
+    ],
   },
   {
     category: 'Analytical Methods',
     items: [
-      'Funnel Analysis',
-      'Churn Modeling',
-      'A/B Testing',
-      'Statistical Inference',
-      'KPI & Financial Modeling',
+      { name: 'Funnel Analysis', slug: 'funnel' },
+      { name: 'Churn Modeling', slug: 'churn' },
+      { name: 'A/B Testing', slug: 'abtest' },
+      { name: 'Statistical Inference', slug: 'stats' },
+      { name: 'KPI & Financial Modeling', slug: 'kpi' },
     ],
   },
 ]
 
+// Experience: each bullet is split into impact (the metric, shown big and
+// in accent) and action (what produced it). Result first.
 export const experience = [
   {
     role: 'Data Analyst',
     company: 'COB Solution (US Healthcare)',
-    period: 'Nov 2024 – Present',
+    period: 'Nov 2024 to Present',
     bullets: [
-      'Built and automated Python time-series forecasting models on 10K+ weekly records, improving prediction accuracy by 27%.',
-      'Diagnosed a multi-region plateau via an 11% patient-frequency drop; ramp-up cohort analysis proved new clinics beat historical benchmarks by 29%, pivoting executive strategy from marketing spend to retention and surfacing $30K in inefficient acquisition spend.',
-      'Built a clinic-level Break-Even Analysis model to flag at-risk locations.',
-      'Scripted Python ETL automating 5+ manual reports (10+ hrs/week saved); optimized Snowflake schema for 40% faster queries.',
+      {
+        impact: '+27% accuracy',
+        action:
+          'Built and automated Python time series forecasting models on 10K+ weekly records.',
+      },
+      {
+        impact: '$30K saved',
+        action:
+          'Diagnosed an 11% patient frequency drop; cohort analysis proved new clinics beat historical benchmarks by 29% and pivoted executive strategy from acquisition spend to retention.',
+      },
+      {
+        impact: 'Risk model',
+        action:
+          'Built a clinic level Break Even Analysis to flag at-risk locations before they slipped into losses.',
+      },
+      {
+        impact: '10+ hrs/week',
+        action:
+          'Scripted Python ETL automating 5+ manual reports and optimized Snowflake schema for 40% faster queries.',
+      },
     ],
   },
   {
     role: 'Service Engineer',
     company: 'Lab Solutions',
-    period: 'Nov 2023 – Oct 2024 · Cairo, Egypt',
+    period: 'Nov 2023 to Oct 2024 · Cairo, Egypt',
     bullets: [
-      'Translated technical specifications into business value for healthcare stakeholders; delivered 15+ demos and training sessions to clinicians.',
+      {
+        impact: '15+ demos',
+        action:
+          'Translated technical specs into business value for healthcare stakeholders and delivered training sessions to clinicians.',
+      },
     ],
   },
 ]
 
+// Projects: outcome shown big at the top of each card, then title and
+// description, then stack chips with icons.
 export const projects = [
   {
     title: 'PTOC Intelligence Hub',
+    outcome: 'Real time KPIs across 30+ clinics',
     description:
-      'Full-stack analytics platform: Snowflake data layer → FastAPI → interactive single-page dashboard surfacing real-time operational, clinical, and scheduling KPIs for a 30+ clinic network.',
-    stack: ['Snowflake', 'FastAPI', 'pandas', 'Chart.js'],
+      'Full stack analytics platform: Snowflake data layer to FastAPI to an interactive single page dashboard surfacing operational, clinical, and scheduling KPIs.',
+    stack: [
+      { name: 'Snowflake', slug: 'snowflake' },
+      { name: 'FastAPI', slug: 'fastapi' },
+      { name: 'pandas', slug: 'pandas' },
+      { name: 'Chart.js', slug: 'chartjs' },
+    ],
   },
   {
     title: 'No-Show Prediction Model',
+    outcome: 'Daily risk scores in production',
     description:
-      'End-to-end ML system predicting physical-therapy appointment no-shows; 6 model iterations, calibrated XGBoost, daily scoring pipeline writing risk tiers back to Snowflake.',
-    stack: ['Python', 'XGBoost', 'Snowflake', 'scikit-learn'],
+      'End to end ML system predicting physical therapy appointment no shows; 6 model iterations, calibrated XGBoost, daily scoring pipeline writing risk tiers back to Snowflake.',
+    stack: [
+      { name: 'Python', slug: 'python' },
+      { name: 'XGBoost', slug: 'xgboost' },
+      { name: 'Snowflake', slug: 'snowflake' },
+      { name: 'scikit-learn', slug: 'scikit-learn' },
+    ],
   },
   {
     title: 'RCM Analytics Pipeline',
+    outcome: 'Visit to payment funnel, SLA tracked',
     description:
-      'End-to-end Revenue Cycle Management pipeline + Power BI dashboard for a 30+ clinic network; claims funnel from visit to payment with business-day SLA metrics.',
-    stack: ['Snowflake', 'Python', 'Power BI', 'GCS'],
+      'End to end Revenue Cycle Management pipeline plus Power BI dashboard for a 30+ clinic network; claims funnel from visit to payment with business day SLA metrics.',
+    stack: [
+      { name: 'Snowflake', slug: 'snowflake' },
+      { name: 'Python', slug: 'python' },
+      { name: 'Power BI', slug: 'powerbi' },
+      { name: 'GCS', slug: 'gcs' },
+    ],
   },
   {
     title: 'Billing Reconciliation Automation',
+    outcome: '7 tier routing, zero manual sweep',
     description:
-      'Automated copay reconciliation Snowflake view cross-referencing scheduling and payment ledgers; 7-tier action classification routing patients to the correct billing action.',
-    stack: ['Snowflake SQL', 'CTEs', 'Window Functions'],
+      'Automated copay reconciliation Snowflake view cross referencing scheduling and payment ledgers; 7 tier action classification routing patients to the correct billing action.',
+    stack: [
+      { name: 'Snowflake SQL', slug: 'snowflake' },
+      { name: 'CTEs', slug: 'sql' },
+      { name: 'Window Functions', slug: 'sql' },
+    ],
   },
   {
     title: 'Customer Churn Prediction',
+    outcome: '0.86 ROC AUC, 86% F1',
     description:
-      'XGBoost telecom churn model with 86% F1-score and 0.86 ROC AUC; SMOTE, feature engineering, model tuning, and an ensemble voting classifier.',
-    stack: ['Python', 'XGBoost', 'scikit-learn'],
+      'XGBoost telecom churn model with strong calibration; SMOTE, feature engineering, model tuning, and an ensemble voting classifier.',
+    stack: [
+      { name: 'Python', slug: 'python' },
+      { name: 'XGBoost', slug: 'xgboost' },
+      { name: 'scikit-learn', slug: 'scikit-learn' },
+    ],
   },
   {
     title: 'Automatic Leukemia Image Detection',
+    outcome: '88% top model accuracy',
     description:
-      'Deep-learning classifier for blood smear images (ALL vs. healthy cells); CNN baseline plus classical model comparison, top model at 88% accuracy.',
-    stack: ['Python', 'TensorFlow/Keras', 'OpenCV'],
+      'Deep learning classifier for blood smear images (ALL vs healthy cells); CNN baseline plus classical model comparison.',
+    stack: [
+      { name: 'Python', slug: 'python' },
+      { name: 'TensorFlow', slug: 'tensorflow' },
+      { name: 'OpenCV', slug: 'opencv' },
+    ],
   },
 ]
 
@@ -125,14 +248,14 @@ export const education = [
   {
     title: 'Associate Data Scientist',
     institution: 'DataCamp (Remote)',
-    period: 'May 2024 – Sep 2024',
+    period: 'May 2024 to Sep 2024',
     detail:
-      '90-hour track: data management, EDA, statistical modeling, ML, communication.',
+      '90 hour track: data management, EDA, statistical modeling, ML, communication.',
   },
   {
     title: 'B.Sc. Biomedical Engineering',
     institution: 'Al-Shorouk Academy, Cairo',
-    period: '2018 – 2023',
+    period: '2018 to 2023',
     detail:
       'Grade: Very Good; IoT wearable graduation project (excellent score).',
   },

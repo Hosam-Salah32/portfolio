@@ -7,10 +7,12 @@ import Projects from './components/Projects.jsx'
 import Education from './components/Education.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import ScrollProgress from './components/ScrollProgress.jsx'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100">
+    <div className="min-h-screen bg-[#0b1120] text-slate-100">
+      <ScrollProgress />
       <Nav />
       <main>
         <Hero />

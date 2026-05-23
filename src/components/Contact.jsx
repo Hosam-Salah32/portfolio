@@ -1,19 +1,22 @@
 import { Mail, Linkedin, Github, Phone } from 'lucide-react'
 import Section from './Section.jsx'
+import SectionBadge from './SectionBadge.jsx'
 import { identity } from '../data/content.js'
 
 export default function Contact() {
   return (
     <Section id="contact">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-accent font-mono mb-3">06. What's Next?</p>
+        <div className="flex justify-center">
+          <SectionBadge number="06" label="What's Next" />
+        </div>
         <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-100">
           Get In Touch
         </h2>
         <p className="mt-6 text-slate-300 leading-relaxed">
-          I'm open to data analytics and analytics-engineering roles —
-          especially in healthcare, US time zone. If you'd like to talk about
-          a project, role, or collaboration, my inbox is open.
+          I am open to data analytics and analytics engineering roles,
+          especially in healthcare on US time zones. If you want to talk about a
+          project, role, or collaboration, my inbox is open.
         </p>
         <a
           href={`mailto:${identity.email}`}
