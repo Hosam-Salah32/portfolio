@@ -3,7 +3,7 @@
 
 export const identity = {
   name: 'Hossam Salah',
-  title: 'Data Analyst | Analytics Engineer',
+  title: 'Data Analyst | Data Scientist',
   location: 'Cairo, Egypt',
   email: 'Hosam.s.alsayed@gmail.com',
   phone: '+20 114 535 6455',
@@ -71,6 +71,36 @@ export const aboutStats = [
 
 export const skills = [
   {
+    category: 'Visualization & BI',
+    items: [
+      { name: 'Power BI', slug: 'powerbi' },
+      { name: 'Tableau', slug: 'tableau' },
+      { name: 'Matplotlib', slug: 'matplotlib' },
+      { name: 'Seaborn', slug: 'seaborn' },
+    ],
+  },
+  {
+    category: 'Analytical Methods',
+    items: [
+      { name: 'Funnel Analysis', slug: 'funnel' },
+      { name: 'Churn Modeling', slug: 'churn' },
+      { name: 'A/B Testing', slug: 'abtest' },
+      { name: 'Statistical Inference', slug: 'stats' },
+      { name: 'KPI & Financial Modeling', slug: 'kpi' },
+    ],
+  },
+  {
+    category: 'Data Platforms & Tools',
+    items: [
+      { name: 'Snowflake', slug: 'snowflake' },
+      { name: 'Git', slug: 'git' },
+      { name: 'GitHub', slug: 'github' },
+      { name: 'Jupyter', slug: 'jupyter' },
+      { name: 'Ollama', slug: 'ollama' },
+      { name: 'ChromaDB', slug: 'chromadb' },
+    ],
+  },
+  {
     category: 'Programming & ML',
     items: [
       { name: 'Python', slug: 'python' },
@@ -92,36 +122,6 @@ export const skills = [
       { name: 'Hyperparameter Tuning', slug: 'tuning' },
       { name: 'RAG/NLP', slug: 'nlp' },
       { name: 'TF-IDF', slug: 'tfidf' },
-    ],
-  },
-  {
-    category: 'Data Platforms & Tools',
-    items: [
-      { name: 'Snowflake', slug: 'snowflake' },
-      { name: 'Git', slug: 'git' },
-      { name: 'GitHub', slug: 'github' },
-      { name: 'Jupyter', slug: 'jupyter' },
-      { name: 'Ollama', slug: 'ollama' },
-      { name: 'ChromaDB', slug: 'chromadb' },
-    ],
-  },
-  {
-    category: 'Visualization & BI',
-    items: [
-      { name: 'Power BI', slug: 'powerbi' },
-      { name: 'Tableau', slug: 'tableau' },
-      { name: 'Matplotlib', slug: 'matplotlib' },
-      { name: 'Seaborn', slug: 'seaborn' },
-    ],
-  },
-  {
-    category: 'Analytical Methods',
-    items: [
-      { name: 'Funnel Analysis', slug: 'funnel' },
-      { name: 'Churn Modeling', slug: 'churn' },
-      { name: 'A/B Testing', slug: 'abtest' },
-      { name: 'Statistical Inference', slug: 'stats' },
-      { name: 'KPI & Financial Modeling', slug: 'kpi' },
     ],
   },
 ]
@@ -153,18 +153,6 @@ export const experience = [
         impact: '10+ hrs/week',
         action:
           'Scripted Python ETL automating 5+ manual reports and optimized Snowflake schema for 40% faster queries.',
-      },
-    ],
-  },
-  {
-    role: 'Service Engineer',
-    company: 'Lab Solutions',
-    period: 'Nov 2023 to Oct 2024 · Cairo, Egypt',
-    bullets: [
-      {
-        impact: '15+ demos',
-        action:
-          'Translated technical specs into business value for healthcare stakeholders and delivered training sessions to clinicians.',
       },
     ],
   },

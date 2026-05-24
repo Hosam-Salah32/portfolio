@@ -11,11 +11,10 @@ export default function Skills() {
       <div className="grid gap-6 sm:grid-cols-2">
         {skills.map((group) => (
           <div key={group.category} className="glass-card p-6">
-            <h3 className="text-slate-100 font-semibold mb-4 flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+            <h3 className="text-slate-100 font-semibold text-xl sm:text-2xl mb-5 text-center tracking-tight">
               {group.category}
             </h3>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap justify-center gap-2">
               {group.items.map((item) => (
                 <li
                   key={item.name}
