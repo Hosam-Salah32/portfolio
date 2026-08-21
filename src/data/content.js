@@ -132,7 +132,7 @@ export const experience = [
   {
     role: 'Data Analyst',
     company: 'COB Solution (US Healthcare)',
-    period: 'Nov 2024 to Present',
+    period: 'Jan 2024 to Present',
     bullets: [
       {
         impact: '+27% accuracy',

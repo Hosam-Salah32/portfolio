@@ -28,7 +28,7 @@ Data Scientist with 18+ months building production machine learning systems in U
 ## PROFESSIONAL EXPERIENCE
 
 ### Data Analyst — COB Solution (US Healthcare, Remote)
-**Nov 2024 – Present**
+**Jan 2024 – Present**
 
 - **Predictive Modeling:** Developed and automated Python time-series forecasting models processing 10K+ weekly records to predict patient volume, improving prediction accuracy by **27%**.
 - **Strategic Growth Analysis:** Diagnosed a multi-region plateau via cohort analysis identifying an 11% patient-frequency drop; proved new clinic cohorts outperformed historical benchmarks by **29%**, pivoting executive strategy and surfacing **$30K** in inefficient acquisition spend.

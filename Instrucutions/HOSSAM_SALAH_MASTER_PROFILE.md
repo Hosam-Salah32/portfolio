@@ -53,7 +53,7 @@ from raw, inconsistent operational data to decisions executives actually act on.
 ## 3. Professional Experience
 
 ### Data Analyst — COB Solution (US Healthcare)
-**Nov 2024 – Present · US time zone (remote)**
+**Jan 2024 – Present · US time zone (remote)**
 
 - **Predictive modeling:** Developed and automated Python time-series
   forecasting models processing 10K+ weekly records to predict patient volume,
@@ -74,13 +74,6 @@ from raw, inconsistent operational data to decisions executives actually act on.
 - *Analytics-focused role:* lead with predictive modeling + strategic growth.
 - *Engineering-focused role:* lead with ETL automation + Snowflake optimization.
 - *Business/ops role:* lead with the $30K savings + strategy pivot.
-
-### Service Engineer — Lab Solutions
-**Nov 2023 – Oct 2024 · Cairo, Egypt**
-
-- Translated complex technical specifications into business value for healthcare
-  stakeholders; delivered 15+ technical demonstrations and training sessions to
-  clinicians.
 
 ---
 
