@@ -27,7 +27,7 @@ Strategic Data Analyst with 18+ months in US healthcare analytics, delivering me
 ## PROFESSIONAL EXPERIENCE
 
 ### Data Analyst — COB Solution (US Healthcare, Remote)
-**Jan 2024 – Present**
+**Dec 2023 – Present**
 
 - **Strategic Growth Analysis:** Diagnosed a multi-region plateau by identifying an **11% patient-frequency drop**; ramp-up cohort analysis proved new clinics outperformed historical benchmarks by **29%**, pivoting executive strategy from marketing spend to retention initiatives — validated by surfacing **$30K** in inefficient acquisition-channel spending.
 - **Forecasting & Reporting:** Built automated Python time-series forecasting on 10K+ weekly records, improving prediction accuracy by **27%**; automated 5+ manual reporting workflows saving **10+ hours weekly**.

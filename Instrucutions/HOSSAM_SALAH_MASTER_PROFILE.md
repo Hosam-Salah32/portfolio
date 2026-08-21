@@ -53,7 +53,7 @@ from raw, inconsistent operational data to decisions executives actually act on.
 ## 3. Professional Experience
 
 ### Data Analyst — COB Solution (US Healthcare)
-**Jan 2024 – Present · US time zone (remote)**
+**Dec 2023 – Present · US time zone (remote)**
 
 - **Predictive modeling:** Developed and automated Python time-series
   forecasting models processing 10K+ weekly records to predict patient volume,
