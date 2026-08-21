@@ -9,7 +9,7 @@ LinkedIn: linkedin.com/in/hossam-salah-0a6033207 | GitHub: github.com/Hosam-Sala
 
 ## PROFESSIONAL SUMMARY
 
-Data Scientist with 18+ months building production machine learning systems in US healthcare. Designed and deployed predictive models (XGBoost, CNN, time-series forecasting) processing 10K+ weekly records and improving forecasting accuracy by 27%. Strong foundation in feature engineering, model calibration, drift monitoring, and end-to-end ML pipelines from Snowflake data layers to scoring outputs. Biomedical engineering background with deep healthcare domain expertise.
+Data Scientist with nearly 3 years building production machine learning systems in US healthcare. Designed and deployed predictive models (XGBoost, CNN, time-series forecasting) processing 10K+ weekly records and improving forecasting accuracy by 27%. Strong foundation in feature engineering, model calibration, drift monitoring, and end-to-end ML pipelines from Snowflake data layers to scoring outputs. Biomedical engineering background with deep healthcare domain expertise.
 
 ---
 

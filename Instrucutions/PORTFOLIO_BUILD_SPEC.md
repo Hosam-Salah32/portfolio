@@ -110,7 +110,7 @@ benchmarks by 29%.
 
 ### Experience (timeline)
 
-**Data Analyst — COB Solution (US Healthcare)** · Nov 2024 – Present
+**Data Analyst — COB Solution (US Healthcare)** · Dec 2023 – Present
 - Built and automated Python time-series forecasting models on 10K+ weekly
   records, improving prediction accuracy by 27%.
 - Diagnosed a multi-region plateau via an 11% patient-frequency drop; ramp-up

@@ -9,7 +9,7 @@ LinkedIn: linkedin.com/in/hossam-salah-0a6033207 | GitHub: github.com/Hosam-Sala
 
 ## PROFESSIONAL SUMMARY
 
-Analytics Engineer with 18+ months building production data infrastructure for US healthcare. Engineered Snowflake data models, Python ETL pipelines, and full-stack analytics APIs serving 30+ clinics. Consolidated 900+ disparate data sources into single sources of truth, optimized Snowflake schemas for a 40% query-performance gain, and automated 5+ reporting workflows saving 10+ hours weekly. Builds the full path from raw operational data to executive decision surfaces.
+Analytics Engineer with nearly 3 years building production data infrastructure for US healthcare. Engineered Snowflake data models, Python ETL pipelines, and full-stack analytics APIs serving 30+ clinics. Consolidated 900+ disparate data sources into single sources of truth, optimized Snowflake schemas for a 40% query-performance gain, and automated 5+ reporting workflows saving 10+ hours weekly. Builds the full path from raw operational data to executive decision surfaces.
 
 ---
 
@@ -30,7 +30,7 @@ Analytics Engineer with 18+ months building production data infrastructure for U
 ## PROFESSIONAL EXPERIENCE
 
 ### Data Analyst — COB Solution (US Healthcare, Remote)
-**Nov 2024 – Present**
+**Dec 2023 – Present**
 
 - **Data Engineering & Automation:** Engineered Python ETL pipelines automating 5+ manual reporting processes (**10+ hours/week saved**); optimized Snowflake schema design achieving a **40% query-performance improvement**.
 - **Forecasting Infrastructure:** Built and automated Python time-series forecasting pipelines processing 10K+ weekly records, improving forecasting accuracy by **27%**.

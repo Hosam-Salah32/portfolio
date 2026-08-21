@@ -218,8 +218,8 @@ Drop these into bullets, summaries, or interview answers as needed:
 
 ## 8. Themes & Narrative (for cover letters / interviews)
 
-- **Healthcare domain depth:** Biomedical engineering degree + 18+ months in US
-  healthcare analytics. Comfortable with clinical, billing, and scheduling data.
+- **Healthcare domain depth:** Biomedical engineering degree + nearly 3 years in
+  US healthcare analytics. Comfortable with clinical, billing, and scheduling data.
 - **Full-stack analytics:** Not just a modeler — builds the data layer
   (Snowflake), the pipeline (Python ETL), the model, and the delivery surface
   (Power BI / FastAPI dashboards).

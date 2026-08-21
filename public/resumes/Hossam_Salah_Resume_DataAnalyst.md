@@ -9,18 +9,18 @@ LinkedIn: linkedin.com/in/hossam-salah-0a6033207 | GitHub: github.com/Hosam-Sala
 
 ## PROFESSIONAL SUMMARY
 
-Strategic Data Analyst with 18+ months in US healthcare analytics, delivering measurable business outcomes through SQL, Python, and Power BI. Identified $30K in annual cost savings, improved forecasting accuracy by 27%, and diagnosed an 11% retention drop that pivoted multi-region executive strategy. Combines rigorous statistical analysis, cohort and funnel methodology, and full-stack technical depth — from Snowflake data modeling to BI dashboards — to turn messy operational data into decisions.
+Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, and Power BI to turn messy operational data into executive decisions. Surfaced **$30K** in annual cost savings, improved forecasting accuracy by **27%**, and diagnosed an **11%** retention drop that pivoted a multi-region growth strategy. Builds the full path from Snowflake data modeling and ETL through to the dashboards leadership actually uses.
 
 ---
 
 ## TECHNICAL SKILLS
 
-- **Analytics & Querying:** SQL, Snowflake, Advanced Excel, Pandas, NumPy, Python, ETL/ELT
-- **Business Intelligence & Visualization:** Power BI, Tableau, Matplotlib, Seaborn, Chart.js, DAX, Data Storytelling
-- **Analytical Methods:** Cohort Analysis, Retention Analysis, Funnel Analysis, Churn Modeling, A/B Testing, Statistical Inference, KPI Modeling, Financial Modeling, Break-Even Analysis, Predictive Forecasting, Time Series Analysis
-- **Machine Learning (Applied):** Scikit-learn, XGBoost, Feature Engineering, Hyperparameter Tuning, Classification, Regression
-- **Data Engineering:** Snowflake Schema Design, Window Functions, CTEs, Google Cloud Storage, Data Quality Validation, Fuzzy Matching
-- **Collaboration:** Git, GitHub, Jupyter, ClickUp
+- **Querying & Programming:** SQL, Snowflake, Python (Pandas, NumPy), Advanced Excel, ETL/ELT
+- **Business Intelligence:** Power BI, DAX, Tableau, Matplotlib, Seaborn, Dashboard Design
+- **Analytical Methods:** Cohort Analysis, Retention Analysis, Funnel Analysis, A/B Testing, Statistical Inference, Time Series Forecasting, KPI Modeling, Financial Modeling, Break-Even Analysis, Churn Modeling
+- **Data Engineering:** Snowflake Schema Design, Window Functions, CTEs, Data Quality Validation, Google Cloud Storage
+- **Applied Machine Learning:** Scikit-learn, XGBoost, Feature Engineering, Classification, Regression
+- **Tools:** Git, GitHub, Jupyter, ClickUp
 
 ---
 
@@ -29,56 +29,25 @@ Strategic Data Analyst with 18+ months in US healthcare analytics, delivering me
 ### Data Analyst — COB Solution (US Healthcare, Remote)
 **Dec 2023 – Present**
 
-- **Strategic Growth Analysis:** Diagnosed a multi-region plateau by identifying an **11% patient-frequency drop**; ramp-up cohort analysis proved new clinics outperformed historical benchmarks by **29%**, pivoting executive strategy from marketing spend to retention initiatives — validated by surfacing **$30K** in inefficient acquisition-channel spending.
-- **Forecasting & Reporting:** Built automated Python time-series forecasting on 10K+ weekly records, improving prediction accuracy by **27%**; automated 5+ manual reporting workflows saving **10+ hours weekly**.
-- **Profitability Modeling:** Designed a Break-Even Analysis model integrating labor rates, operational hours, and fixed overhead to calculate clinic visit-volume thresholds and proactively flag at-risk locations.
-- **Data Infrastructure:** Optimized Snowflake schema design for a **40% query-performance gain**, enabling faster downstream reporting and ad-hoc analysis.
+- **Strategic growth analysis:** Diagnosed a multi-region plateau by identifying an **11% patient-frequency drop**; a ramp-up cohort analysis proved new clinics outperformed historical benchmarks by **29%**, pivoting executive strategy from acquisition spend to retention and surfacing **$30K** in inefficient marketing spend.
+- **Forecasting and predictive modeling:** Built automated Python time-series forecasting on 10K+ weekly records, improving prediction accuracy by **27%**; developed an appointment no-show risk model (XGBoost) that writes daily risk tiers back to Snowflake for staff outreach.
+- **Revenue cycle analytics:** Consolidated visit, clinical, and billing data from **3 disparate systems** into a single Snowflake model for a 30+ clinic network, with business-day-aware SLA metrics, claims funnel staging, and aging-bucket segmentation flagging delayed and underpaid claims in Power BI.
+- **Executive KPI platform:** Delivered a real-time operational, clinical, and scheduling KPI dashboard for 30+ clinics, replacing manual spreadsheet reporting; built end to end from the Snowflake data layer through a Python API to the front end, including composite clinic-health scoring and automated alerts.
+- **Data infrastructure and automation:** Engineered a pipeline standardizing **900+ inconsistent Excel files** and reconciling **850K+ clinical logs** against billing records to recover orphaned revenue; automated 5+ manual reporting workflows (**10+ hours/week saved**) and optimized Snowflake schema design for a **40% query-performance gain**.
+- **Profitability modeling:** Designed a break-even model integrating labor rates, operational hours, and fixed overhead to calculate clinic visit-volume thresholds and proactively flag at-risk locations; automated copay reconciliation to replace a manual billing review process.
 
 ---
 
-## KEY PROJECTS
-
-### Clinic Data Infrastructure & Strategic Growth Review
-- Python pipeline standardizing **900+ inconsistent Excel files** using custom "Header Hunting" and "Peek Test" validation algorithms.
-- Hierarchical "Waterfall Matching" reconciliation (exact then fuzzy) merging **850K+ clinical logs** with billing records to recover orphaned revenue.
-- Power BI executive dashboard surfacing the retention decline that directly informed the 2026 strategic pivot.
-- **Stack:** Python (Pandas, fuzzy matching), Power BI.
-
-### Revenue Cycle Management (RCM) Analytics Pipeline
-- Multi-source Snowflake view consolidating visit, clinical documentation, and billing data across **3 disparate systems** for a 30+ clinic network.
-- Business-day-aware SLA metrics; claims funnel staging (Checked-Out → Finalized → Submitted → Paid); insurance benchmarking; aging-bucket segmentation flagging delayed/underpaid claims.
-- Power BI dashboards delivering real-time claims-lifecycle visibility.
-- **Stack:** Snowflake (SQL, CTEs, window functions), Python, Power BI, Google Cloud Storage.
-
-### PTOC Intelligence Hub — Operational KPI Platform
-- Surfaces real-time operational, clinical, and scheduling KPIs for a 30+ clinic physical therapy network, replacing manual spreadsheet reporting.
-- Built end-to-end: Snowflake data layer → Python API (32 REST endpoints, 6 KPI domains) → interactive single-page dashboard.
-- Composite clinic-health scoring and rule-based alert engine.
-- **Stack:** Snowflake, FastAPI, Python, Pandas, Chart.js.
-
-### Billing Reconciliation Automation
-- Automated copay reconciliation replacing a manual billing review process with an auditable Snowflake view.
-- 7-tier action classifier (COLLECT, VERIFY, CHART_REVIEW, REFUND, BUNDLE, ESCALATE, NO_ACTION) reducing manual chart-review workload.
-- **Stack:** Snowflake SQL, complex CTEs, window functions.
-
-### No-Show Prediction Model — PT of The City
-- ML system predicting physical-therapy appointment no-shows, scoring tomorrow's schedule and routing risk tiers with plain-English reasons back to Snowflake for staff outreach.
-- 6 iterative model versions with full diagnostics (SHAP, drift monitoring, leakage checks).
-- **Stack:** Python, XGBoost, Scikit-learn, Snowflake, Google Cloud Storage.
+## SELECTED PROJECTS
 
 ### Customer Churn Prediction — Telecom
-- Churn ML pipeline on 7,000+ customer records: EDA, feature engineering, SMOTE, hyperparameter tuning, ensemble voting classifier.
-- **Result:** **86% F1-score, 0.86 ROC AUC**.
-- **Stack:** Python, XGBoost, Scikit-learn, Pandas.
+Machine learning pipeline on 7,000+ customer records covering EDA, feature engineering, class-imbalance handling, and model tuning across seven algorithms. **Result: 86% F1-score, 0.86 ROC AUC.** *Python, XGBoost, Scikit-learn, Pandas.*
 
 ### Automatic Leukemia Image Detection
-- CNN classifier distinguishing leukemic from healthy blood-smear cell images.
-- **Result:** **88% accuracy, 0.87 F1-score**.
-- **Stack:** Python, TensorFlow, Keras, OpenCV.
+Convolutional neural network classifying blood-smear cell images as leukemic or healthy, benchmarked against classical models. **Result: 88% accuracy, 0.87 F1-score.** *Python, TensorFlow, Keras, OpenCV.*
 
-### Customer Support Chatbot using RAG
-- Local AI chatbot retrieving from custom CSV/PDF documents and generating context-aware responses.
-- **Stack:** LangChain, Ollama, ChromaDB, Python.
+### Customer Support Chatbot (Retrieval-Augmented Generation)
+Local AI chatbot that answers questions from custom CSV and PDF documents using semantic retrieval and context-aware response generation. *LangChain, Ollama, ChromaDB, Python.*
 
 ---
 
