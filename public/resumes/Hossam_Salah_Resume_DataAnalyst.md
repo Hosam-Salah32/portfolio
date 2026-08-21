@@ -19,7 +19,7 @@ Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, 
 - **Business Intelligence:** Power BI, DAX, Tableau, Matplotlib, Seaborn, Dashboard Design
 - **Analytical Methods:** Cohort Analysis, Retention Analysis, Funnel Analysis, A/B Testing, Statistical Inference, Time Series Forecasting, KPI Modeling, Financial Modeling, Break-Even Analysis, Churn Modeling
 - **Data Engineering:** Snowflake Schema Design, Window Functions, CTEs, Data Quality Validation, Google Cloud Storage
-- **Applied Machine Learning:** Scikit-learn, XGBoost, Feature Engineering, Classification, Regression
+- **Applied Machine Learning:** Scikit-learn, XGBoost, Feature Engineering, Model Calibration, Model Explainability (SHAP), Classification, Regression
 - **Tools:** Git, GitHub, Jupyter, ClickUp
 
 ---
@@ -30,7 +30,8 @@ Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, 
 **Dec 2023 – Present**
 
 - **Strategic growth analysis:** Diagnosed a multi-region plateau by identifying an **11% patient-frequency drop**; a ramp-up cohort analysis proved new clinics outperformed historical benchmarks by **29%**, pivoting executive strategy from acquisition spend to retention and surfacing **$30K** in inefficient marketing spend.
-- **Forecasting and predictive modeling:** Built automated Python time-series forecasting on 10K+ weekly records, improving prediction accuracy by **27%**; developed an appointment no-show risk model (XGBoost) that writes daily risk tiers back to Snowflake for staff outreach.
+- **Forecasting:** Built automated Python time-series forecasting on 10K+ weekly records to predict patient volume, improving prediction accuracy by **27%**.
+- **Production machine learning:** Built and deployed an appointment no-show prediction model over 6 iterations (calibrated XGBoost, time-based validation, leakage-audited feature pipeline), with a daily scoring job writing risk tiers and plain-English drivers back to Snowflake for staff outreach; monitored with SHAP and drift analysis.
 - **Revenue cycle analytics:** Consolidated visit, clinical, and billing data from **3 disparate systems** into a single Snowflake model for a 30+ clinic network, with business-day-aware SLA metrics, claims funnel staging, and aging-bucket segmentation flagging delayed and underpaid claims in Power BI.
 - **Executive KPI platform:** Delivered a real-time operational, clinical, and scheduling KPI dashboard for 30+ clinics, replacing manual spreadsheet reporting; built end to end from the Snowflake data layer through a Python API to the front end, including composite clinic-health scoring and automated alerts.
 - **Data infrastructure and automation:** Engineered a pipeline standardizing **900+ inconsistent Excel files** and reconciling **850K+ clinical logs** against billing records to recover orphaned revenue; automated 5+ manual reporting workflows (**10+ hours/week saved**) and optimized Snowflake schema design for a **40% query-performance gain**.
