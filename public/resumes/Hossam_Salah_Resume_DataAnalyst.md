@@ -29,36 +29,35 @@ Data Analyst with nearly 3 years turning messy multi-system operational data int
 ### Data Analyst — COB Solution (US Healthcare, Remote)
 **Dec 2023 – Present** | US time zone
 
-- **Revenue recovery:** Identified **$70K** in unbilled revenue by reconciling service delivery records against payment transactions across a 30+ location network; classified every case into a 7-tier action hierarchy ranked by evidentiary certainty, backed by a window-function rate-imputation engine with bundle detection, so collections staff worked the highest-confidence recoveries first.
-- **Strategic growth analysis:** Diagnosed a multi-region plateau by identifying an **11% drop in customer visit frequency**; a ramp-up cohort analysis proved new locations outperformed historical benchmarks by **29%**, pivoting executive strategy from acquisition spend to retention and surfacing **$30K** in inefficient marketing spend.
-- **Forecasting:** Built automated Python time-series forecasting on 10K+ weekly records to predict demand volume, improving prediction accuracy by **27%**.
-- **Production machine learning:** Built and deployed an appointment no-show prediction model over 6 iterations (calibrated XGBoost, time-based validation, leakage-audited feature pipeline), with a daily scoring job writing risk tiers and plain-English drivers back to Snowflake for staff outreach; monitored with SHAP and drift analysis.
-- **Profitability modeling:** Designed a break-even model integrating labor rates, operational hours, and fixed overhead to calculate location-level volume thresholds and proactively flag at-risk sites.
-- **Data infrastructure and automation:** Engineered a pipeline standardizing **900+ inconsistent Excel files** and reconciling **850K+ service logs** against billing records to recover orphaned revenue; automated 5+ manual reporting workflows (**10+ hours/week saved**) and optimized Snowflake schema design for a **40% query-performance gain**.
-- **Executive reporting:** Present analysis and delivery progress to executive leadership in a weekly review, translating multi-system data and model output into decisions on growth strategy, staffing, and revenue recovery.
+- **Recovered $70K in unbilled revenue** by reconciling service records against payment transactions across a 30+ location network, ranking every case by evidentiary certainty so collections staff worked the highest-confidence recoveries first.
+- **Pivoted a multi-region growth strategy** by diagnosing an 11% drop in customer visit frequency; cohort analysis proved new locations beat historical benchmarks by 29%, redirecting spend from acquisition to retention and surfacing **$30K** in wasted marketing budget.
+- **Improved demand forecasting accuracy 27%** with automated Python time-series models over 10K+ weekly records.
+- **Cut query times 40% and reclaimed 10+ hours/week** by redesigning the Snowflake schema, automating 5+ manual reporting workflows, and standardizing 900+ inconsistent Excel files into a single pipeline.
+- **Deployed a no-show prediction model** (calibrated XGBoost) scoring each day's schedule and writing risk tiers back to Snowflake for staff outreach; refined across 6 iterations with leakage and drift monitoring.
+- **Built a break-even model** setting location-level volume thresholds from labor, hours, and overhead to flag at-risk sites before they slipped into losses.
+- Present findings to executive leadership in a weekly review, translating analysis into decisions on growth strategy, staffing, and revenue recovery.
 
 ---
 
 ## SELECTED PROJECTS — COB SOLUTION
 
 ### Revenue Mix & Unit Economics Analysis — 33-Location Network
-- Consolidated **171 fragmented customer-segment records** (insurance payers) into a standardized taxonomy and built a transaction-level fact table spanning **113K+ transactions**, 13.8K customers, and **$7.25M** in collected revenue.
-- Quantified an **11x spread in revenue per transaction** ($25 to $280) across segments and diagnosed the mix shift driving a sustained decline in average revenue per transaction.
-- Ranked locations by revenue-mix efficiency, modeled best and worst case scenarios for shifts in mix, and identified underrepresented high-value segments by location.
-- Translated findings into an operating plan covering referral-source targeting, contract renegotiation priorities, and capacity and staffing allocation.
-- Delivered an executive dashboard with location scorecards and a monthly tracking cadence against defined success metrics (blended revenue per transaction, revenue per location, segment mix percentage).
+- Consolidated **171 fragmented customer segments** into a standardized taxonomy over **113K+ transactions** and **$7.25M** in collected revenue.
+- Found an **11x spread in revenue per transaction** ($25 to $280) across segments, and identified the mix shift driving a sustained decline in average revenue.
+- Ranked locations by revenue-mix efficiency and sized the upside of shifting mix, driving an operating plan across referral targeting, contract renegotiation, and staffing allocation.
+- Delivered an executive dashboard with location scorecards and a monthly tracking cadence.
 - **Stack:** Snowflake, SQL, Power BI.
 
 ### Collections Analytics Platform — Multi-Location Group
-- Built a Snowflake model tracking outstanding customer balances and cancellation fees, replacing manual front-desk checks and classifying every transaction line into **15+ dispositions** (missing charges, duplicates, incorrect fees, miscoded entries) to drive a structured cleanup workflow.
-- Engineered a snapshot-based fact model over daily extracts that carried no native change history, using window functions and synthetic tombstone records to make deletions and corrections auditable and to measure cleanup progress over time.
-- Re-architected the Power BI measure layer around a snapshot-date-in-context pattern, resolving a semi-additive aggregation error where plain sums broke under grouped contexts and eliminating duplicated measure variants.
-- Partnered with business stakeholders to define and document **10+ load-bearing business rules** (bundle thresholds, accrual timing, partial-payment assumptions) before implementation; delivered a two-tier dashboard separating executive KPIs and waterfall decomposition from an operational data-quality view.
+- Replaced manual front-desk balance checks with a Snowflake model classifying every transaction line into **15+ dispositions** to drive a structured cleanup workflow.
+- Made deletions and corrections auditable in a source with no change history, using snapshot fact modeling and synthetic tombstone records to measure cleanup progress over time.
+- Fixed a semi-additive aggregation error where plain sums broke under grouped contexts, re-architecting the DAX measure layer around a snapshot-date-in-context pattern.
+- Documented **10+ load-bearing business rules** with stakeholders before build; shipped a two-tier dashboard splitting executive KPIs from an operational data-quality view.
 - **Stack:** Snowflake, SQL, Power BI, DAX.
 
 ### Executive KPI Platform — 30+ Location Network
-- Delivered real-time operational, service, and scheduling KPIs for a 30+ location network, replacing manual spreadsheet reporting.
-- Built end to end from the Snowflake data layer through a Python API to an interactive dashboard, with composite location-health scoring and a rule-based alert engine.
+- Replaced manual spreadsheet reporting with real-time operational, service, and scheduling KPIs for a 30+ location network.
+- Built end to end from the Snowflake data layer through a Python API to an interactive dashboard, with composite location-health scoring and rule-based alerting.
 - **Stack:** Snowflake, FastAPI, Python, Pandas, Chart.js.
 
 ---
