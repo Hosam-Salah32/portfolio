@@ -35,6 +35,7 @@ Data Analyst with nearly 3 years turning messy multi-system operational data int
 - **Production machine learning:** Built and deployed an appointment no-show prediction model over 6 iterations (calibrated XGBoost, time-based validation, leakage-audited feature pipeline), with a daily scoring job writing risk tiers and plain-English drivers back to Snowflake for staff outreach; monitored with SHAP and drift analysis.
 - **Profitability modeling:** Designed a break-even model integrating labor rates, operational hours, and fixed overhead to calculate location-level volume thresholds and proactively flag at-risk sites.
 - **Data infrastructure and automation:** Engineered a pipeline standardizing **900+ inconsistent Excel files** and reconciling **850K+ service logs** against billing records to recover orphaned revenue; automated 5+ manual reporting workflows (**10+ hours/week saved**) and optimized Snowflake schema design for a **40% query-performance gain**.
+- **Executive reporting:** Present analysis and delivery progress to executive leadership in a weekly review, translating multi-system data and model output into decisions on growth strategy, staffing, and revenue recovery.
 
 ---
 
