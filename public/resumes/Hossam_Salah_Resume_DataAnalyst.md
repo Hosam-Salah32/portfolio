@@ -29,7 +29,7 @@ Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, 
 ### Data Analyst — COB Solution (US Healthcare, Remote)
 **Dec 2023 – Present** | US time zone
 
-- **Revenue recovery:** Identified **$70K** in missing copay revenue by reconciling visit records against payment transactions across a multi-clinic network, and routed recoveries to billing staff ranked by evidentiary certainty.
+- **Revenue recovery:** Identified **$70K** in missing copay revenue by reconciling visit records against payment transactions across a multi-clinic network; classified patients into a 7-tier action hierarchy ranked by evidentiary certainty, backed by a window-function rate-imputation engine with bundle detection, so billing staff worked the highest-confidence recoveries first.
 - **Strategic growth analysis:** Diagnosed a multi-region plateau by identifying an **11% patient-frequency drop**; a ramp-up cohort analysis proved new clinics outperformed historical benchmarks by **29%**, pivoting executive strategy from acquisition spend to retention and surfacing **$30K** in inefficient marketing spend.
 - **Forecasting:** Built automated Python time-series forecasting on 10K+ weekly records to predict patient volume, improving prediction accuracy by **27%**.
 - **Production machine learning:** Built and deployed an appointment no-show prediction model over 6 iterations (calibrated XGBoost, time-based validation, leakage-audited feature pipeline), with a daily scoring job writing risk tiers and plain-English drivers back to Snowflake for staff outreach; monitored with SHAP and drift analysis.
@@ -39,12 +39,6 @@ Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, 
 ---
 
 ## SELECTED PROJECTS
-
-### Copay Reconciliation & Revenue Recovery — Multi-Clinic PT Network
-- Mapped visit records against payment transactions to reconstruct expected versus actual patient payments, **identifying $70K in missing copay revenue**.
-- Classified patients into a 7-tier action hierarchy ranked by evidentiary certainty, separating confirmed collections from cases needing verification or chart review so billing staff worked the highest-confidence recoveries first.
-- Built a window-function rate-imputation engine with bundle detection to handle missing and non-standard rates, keeping every imputed value transparent and auditable for billing staff.
-- **Stack:** Snowflake SQL, CTEs, window functions.
 
 ### Payer Mix & Reimbursement Optimization — 33-Clinic Network
 - Consolidated **171 fragmented payer groupings** into a standardized taxonomy (payer, plan type, product) and built a visit-level fact table spanning **113K+ visits**, 13.8K patients, and **$7.25M** in collected payments.
@@ -60,10 +54,6 @@ Data Analyst with nearly 3 years in US healthcare analytics, using SQL, Python, 
 - Re-architected the Power BI measure layer around a snapshot-date-in-context pattern, resolving a semi-additive aggregation error where plain sums broke under grouped contexts and eliminating duplicated measure variants.
 - Partnered with billing stakeholders to define and document **10+ load-bearing business rules** (bundle thresholds, accrual timing, partial-payment assumptions) before implementation; delivered a two-tier dashboard separating executive KPIs and waterfall decomposition from an operational data-quality view.
 - **Stack:** Snowflake, SQL, Power BI, DAX.
-
-### Revenue Cycle Management Analytics Pipeline
-- Consolidated visit, clinical documentation, and billing data from **3 disparate systems** into a single Snowflake model for a 30+ clinic network, with business-day-aware SLA metrics, claims-funnel staging, and aging-bucket segmentation flagging delayed and underpaid claims.
-- **Stack:** Snowflake, Python, Power BI, Google Cloud Storage.
 
 ### PTOC Intelligence Hub — Executive KPI Platform
 - Delivered real-time operational, clinical, and scheduling KPIs for a 30+ clinic network, built end to end from the Snowflake data layer through a Python API to an interactive dashboard with composite clinic-health scoring and rule-based alerting.
