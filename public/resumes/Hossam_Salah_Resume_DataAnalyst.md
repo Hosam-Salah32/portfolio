@@ -29,7 +29,7 @@ Data Analyst with nearly 3 years turning messy multi-system operational data int
 ### Data Analyst — COB Solution (US Healthcare, Remote)
 **Dec 2023 – Present** | US time zone
 
-- **Recovered $70K in unbilled revenue** by reconciling service records against payment transactions across a 30+ location network, ranking every case by evidentiary certainty so collections staff worked the highest-confidence recoveries first.
+- **Identified $70K in unbilled revenue** by reconciling service records against payment transactions across a 30+ location network, ranking every case by evidentiary certainty so collections staff worked the highest-confidence recoveries first.
 - **Pivoted a multi-region growth strategy** by diagnosing an 11% drop in customer visit frequency; cohort analysis proved new locations beat historical benchmarks by 29%, redirecting spend from acquisition to retention and surfacing **$30K** in wasted marketing budget.
 - **Improved demand forecasting accuracy 27%** with automated Python time-series models over 10K+ weekly records.
 - **Cut query times 40% and reclaimed 10+ hours/week** by redesigning the Snowflake schema, automating 5+ manual reporting workflows, and standardizing 900+ inconsistent Excel files into a single pipeline.
