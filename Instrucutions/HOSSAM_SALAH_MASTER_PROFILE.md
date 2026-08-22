@@ -121,18 +121,27 @@ and impact metrics. Pull whichever depth the medium needs.
 - **Highlights:** Single source of truth across billing, EMR, and scheduling;
   aging-bucket segmentation flagging delayed/underpaid claims.
 
-### 4.4 Billing Reconciliation Automation
-- **One-liner:** Automated copay reconciliation system replacing a manual
-  billing review process with an auditable Snowflake view.
+### 4.4 Copay Reconciliation & Revenue Recovery
+> Distinct from 4.9. This project is the *analysis* that found the money; 4.9 is
+> the *engineering platform* that made the underlying data usable and tracked
+> cleanup progress over time. Keep them as separate entries.
+
+- **One-liner:** Copay reconciliation mapping visits to payment transactions to
+  identify missing patient payments, surfacing $70K in unbilled copay revenue.
 - **Detail:** Cross-references a visit scheduling database against a payment
-  ledger to reconstruct expected vs. actual patient payments, then routes each
-  patient to the correct billing action. Includes multi-source deduplication, a
+  ledger to reconstruct expected vs. actual patient payments, then categorises
+  each patient by evidentiary certainty so billing staff work the
+  highest-confidence recoveries first. Includes multi-source deduplication, a
   window-function rate-imputation engine, bundle detection, and a 7-tier action
   classification (COLLECT, VERIFY_THEN_COLLECT, CHART_REVIEW, REFUND, BUNDLE,
   ESCALATE, NO_ACTION).
 - **Stack:** Snowflake SQL, complex CTEs, window functions.
-- **Highlights:** Reduced manual chart-review workload by auto-clearing clean
-  cases; full imputation transparency for billing staff.
+- **Metrics:** **$70K in missing copay revenue identified.**
+- **Highlights:** Certainty-ranked patient categorisation; reduced manual
+  chart-review workload by auto-clearing clean cases; full imputation
+  transparency for billing staff.
+- **Resume note:** Do not list the 7 enum values verbatim — describe it as a
+  "7-tier action hierarchy ranked by evidentiary certainty."
 
 ### 4.5 Customer Churn Prediction (Telecom)
 - **One-liner:** XGBoost churn model identifying at-risk telecom customers and
@@ -172,6 +181,52 @@ and impact metrics. Pull whichever depth the medium needs.
 - **Stack:** Python (pandas, fuzzy matching), Power BI.
 - **Date:** Dec 2024.
 
+### 4.9 Collections Analytics Platform
+> Distinct from 4.4. This is the engineering/tracking layer; 4.4 is the analysis
+> that identified the $70K. Keep them as separate entries.
+
+- **One-liner:** Snowflake reconciliation model and two-tier Power BI dashboard
+  tracking copay and cancellation-fee collection across a multi-clinic PT
+  practice, replacing manual front-desk billing checks.
+- **Detail:** Snapshot-based fact model built on daily historical extracts,
+  tracking each transaction line through its full lifecycle (added, duplicated,
+  miscoded, resolved) via a dual-key design and synthetic "tombstone" rows that
+  make deletions and corrections auditable over time — the source system carries
+  no native change history. Classifies every line into 15+ dispositions to drive
+  a front-desk cleanup workflow. Semi-additive DAX measures resolve a "current
+  balance vs. period sum" modelling error, letting one measure set work across
+  cards, trend lines, and cohort matrices without duplicated logic.
+- **Stack:** Snowflake, SQL (window functions, CTEs), Power BI, DAX.
+- **Highlights:** 15+ dispositions; 10+ load-bearing business rules documented
+  with stakeholders before implementation; two-tier dashboard (executive KPI and
+  waterfall decomposition vs. operational data-quality/backlog view); WoW/MoM
+  progress tracking; aging and clinic-level backlog analysis.
+- **Resume note:** Do not use internal object names (VW_PAYMENT_FACT_V3,
+  LINE_KEY, OBLIGATION_KEY) — they mean nothing outside the codebase. The
+  tombstone, snapshot, and semi-additive concepts are the credibility signals.
+
+### 4.10 Payer Mix & Reimbursement Optimization
+- **One-liner:** End-to-end payer mix analysis across a 33-clinic network,
+  from payer taxonomy through opportunity sizing to an executive dashboard and
+  a monthly tracking cadence.
+- **Detail:** Collapsed 171 fragmented insurance groupings into a standardized
+  taxonomy (payer, plan type, product), standardized clinic names, deduped
+  patients, and built a single visit-level fact table. Analysed payment per
+  visit and payer mix by clinic and appointment type, utilisation patterns by
+  payer, and mix shift over time — connecting it to a previously flagged decline
+  in average payment per visit. Ranked clinics by payer-mix efficiency, modelled
+  best/worst-case revenue scenarios, and identified underrepresented
+  high-reimbursement segments by clinic. Findings drove an operating plan across
+  referral-source targeting, payer contract renegotiation, and clinic capacity
+  and staffing allocation, tracked monthly against defined success metrics.
+- **Stack:** Snowflake, SQL, Power BI.
+- **Metrics:** 113,725 visits · 33 clinics · 13,802 patients · $7.25M collected
+  (Jan–May 2026); 171 payer groupings consolidated; $25–$280 per-visit
+  reimbursement spread.
+- **Resume note:** Frame this as payer mix and reimbursement analysis, never as
+  "reducing low-paying insurance visits" — on a healthcare resume that reads as
+  care rationing. Lead with contract, referral, and capacity levers.
+
 ---
 
 ## 5. Skills
@@ -201,8 +256,12 @@ and impact metrics. Pull whichever depth the medium needs.
 
 Drop these into bullets, summaries, or interview answers as needed:
 
+- $70K in missing copay revenue identified.
 - 27% improvement in forecasting accuracy (10K+ weekly records).
 - $30K in inefficient acquisition spend identified and eliminated.
+- 113,725 visits / $7.25M in collected payments analysed across 33 clinics.
+- 171 fragmented payer groupings consolidated into a standardized taxonomy.
+- 15+ transaction dispositions classified in the collections cleanup workflow.
 - 11% retention drop diagnosed → executive strategy pivot.
 - 29% — margin by which new clinic cohorts beat historical benchmarks.
 - 40% Snowflake query-performance improvement.
