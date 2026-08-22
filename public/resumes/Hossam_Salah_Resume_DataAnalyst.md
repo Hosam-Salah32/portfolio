@@ -33,8 +33,8 @@ Data Analyst with nearly 3 years turning messy multi-system operational data int
 - **Pivoted a multi-region growth strategy** by diagnosing an 11% drop in customer visit frequency; cohort analysis proved new locations beat historical benchmarks by 29%, redirecting spend from acquisition to retention and surfacing **$30K** in wasted marketing budget.
 - **Improved demand forecasting accuracy 27%** with automated Python time-series models over 10K+ weekly records.
 - **Cut query times 40% and reclaimed 10+ hours/week** by redesigning the Snowflake schema, automating 5+ manual reporting workflows, and standardizing 900+ inconsistent Excel files into a single pipeline.
-- **Deployed a no-show prediction model** (calibrated XGBoost) scoring each day's schedule and writing risk tiers back to Snowflake for staff outreach; refined across 6 iterations with leakage and drift monitoring.
-- **Built a break-even model** setting location-level volume thresholds from labor, hours, and overhead to flag at-risk sites before they slipped into losses.
+- **Turned predicted no-shows into filled appointments** by deploying a model that scores each day's schedule, letting staff confirm at-risk bookings or double-book the slot — protecting revenue and raising staff utilization. Calibrated XGBoost, refined over 6 iterations with leakage and drift monitoring.
+- **Pinpointed the profit-maximizing visit volume for each location** by modeling labor, operating hours, and overhead against revenue — showing leadership where added volume would force staffing hours the site could not fully utilize, and where trimming visits protected margin.
 - Present findings to executive leadership in a weekly review, translating analysis into decisions on growth strategy, staffing, and revenue recovery.
 
 ---

@@ -66,6 +66,11 @@ from raw, inconsistent operational data to decisions executives actually act on.
 - **Profitability analytics:** Built a Break-Even Analysis model integrating
   labor rates, visit volume, and overhead to calculate clinic-level
   profitability thresholds and proactively flag at-risk locations.
+  *Business framing (use this, not the mechanism):* the model identifies the
+  profit-maximizing visit volume per clinic, not just a break-even floor.
+  Volume is not always good — past a threshold, added visits force staffing
+  hours the clinic cannot fill to 100% utilisation, so the model also shows
+  when *cutting* visits protects margin.
 - **Data engineering & automation:** Scripted Python ETL workflows automating 5+
   manual reporting processes (10+ hours/week saved); optimized Snowflake schema
   design for a 40% query-performance gain.
@@ -107,6 +112,11 @@ and impact metrics. Pull whichever depth the medium needs.
 - **Highlights:** v6 final model; risk-tier operating points derived from
   recall-at-precision analysis; full diagnostics suite (SHAP, PSI drift, leakage
   checks).
+- **Business framing (lead with this, not the model internals):** the point is
+  the intervention, not the prediction. Flagged appointments get either a
+  confirmation call or a double-booked slot, converting would-be empty slots
+  into billable visits. Outcome: protected revenue and higher staff
+  utilisation. No percentage figure available — do not invent one.
 
 ### 4.3 Revenue Cycle Management (RCM) Analytics Pipeline
 - **One-liner:** End-to-end RCM data pipeline and Power BI dashboard giving a
