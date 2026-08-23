@@ -190,10 +190,7 @@ export const projects = [
   // Cards with an `image` span two columns, so keep them first in the array —
   // a wide card placed mid-grid wraps and leaves an empty cell beside it.
   {
-    title: 'PTOC Intelligence Hub',
-    image: '/screenshots/Chat-bot.png',
-    imageAlt:
-      'The Intelligence Assistant view: clinic and date-range scope controls, suggested questions such as “which clinics need my attention right now”, and a live Snowflake connection indicator.',
+    title: 'Executive KPI Platform',
     outcome: 'Ask it a question, get a traceable answer',
     description:
       'Executive platform for a 30+ clinic network: performance, clinical, operations, and scheduling views alongside no-show risk, diagnostics, and alerting, all live against Snowflake. A natural language assistant answers questions like “which clinics need my attention right now” by matching intent to precomputed metrics, so every answer is deterministic and traces back to the data rather than being generated.',
