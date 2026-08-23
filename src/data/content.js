@@ -42,10 +42,6 @@ export const heroStack = [
   { slug: 'tensorflow', label: 'TensorFlow' },
 ]
 
-// One line "Currently building" signal in the hero.
-export const currentlyBuilding =
-  'Now shipping the PTOC Intelligence Hub: a Snowflake plus FastAPI dashboard for a 30 clinic network.'
-
 // Short two-sentence intro above the About stat tiles.
 export const aboutIntro =
   'I work at the seam between raw data and the decisions a business actually makes. My focus is data engineering, automation, and forecasting in US healthcare.'
@@ -185,6 +181,11 @@ export const experience = [
 
 // Projects: outcome shown big at the top of each card, then title and
 // description, then stack chips with icons.
+//
+// Optional screenshot: add `image: '/screenshots/name.png'` (files live in
+// public/screenshots/) and an optional `imageAlt`. Cards without an image
+// render exactly as before. Redact client metrics and branding before adding
+// anything here — the site is public.
 export const projects = [
   {
     title: 'Payer Mix & Reimbursement Optimization',
@@ -221,9 +222,9 @@ export const projects = [
   },
   {
     title: 'PTOC Intelligence Hub',
-    outcome: 'Real time KPIs across 30+ clinics',
+    outcome: 'Ask it a question, get a traceable answer',
     description:
-      'Full stack analytics platform: Snowflake data layer to FastAPI to an interactive single page dashboard surfacing operational, clinical, and scheduling KPIs.',
+      'Executive platform for a 30+ clinic network: performance, clinical, operations, and scheduling views alongside no-show risk, diagnostics, and alerting, all live against Snowflake. A natural language assistant answers questions like “which clinics need my attention right now” by matching intent to precomputed metrics, so every answer is deterministic and traces back to the data rather than being generated.',
     stack: [
       { name: 'Snowflake', slug: 'snowflake' },
       { name: 'FastAPI', slug: 'fastapi' },

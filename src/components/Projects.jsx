@@ -15,6 +15,14 @@ export default function Projects() {
             key={p.title}
             className="glass-card p-6 flex flex-col hover:-translate-y-1"
           >
+            {p.image && (
+              <img
+                src={p.image}
+                alt={p.imageAlt ?? `${p.title} interface`}
+                loading="lazy"
+                className="mb-5 -mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 object-cover object-top aspect-[16/10]"
+              />
+            )}
             <p className="outcome-metric text-lg leading-snug">{p.outcome}</p>
             <div className="mt-3 flex items-start justify-between gap-3">
               <h3 className="text-lg font-semibold text-slate-100">{p.title}</h3>
