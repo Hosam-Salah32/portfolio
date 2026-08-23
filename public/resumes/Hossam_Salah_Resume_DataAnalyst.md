@@ -55,9 +55,9 @@ Data Analyst with nearly 3 years turning messy multi-system operational data int
 - Documented **10+ load-bearing business rules** with stakeholders before build; shipped a two-tier dashboard splitting executive KPIs from an operational data-quality view.
 - **Stack:** Snowflake, SQL, Power BI, DAX.
 
-### Executive KPI Platform — 30+ Location Network
-- Replaced manual spreadsheet reporting with real-time operational, service, and scheduling KPIs for a 30+ location network.
-- Built end to end from the Snowflake data layer through a Python API to an interactive dashboard, with composite location-health scoring and rule-based alerting.
+### PTOC Intelligence Hub — Executive KPI Platform, 30+ Locations
+- Replaced manual spreadsheet reporting with real-time operational, service, and scheduling KPIs, built end to end from the Snowflake data layer through a Python API to an interactive dashboard with composite location-health scoring and rule-based alerting.
+- Added a **natural-language assistant** that answers operational questions ("which locations need attention right now") by matching intent to precomputed metrics — deterministic by design, so every answer traces back to source data instead of being generated.
 - **Stack:** Snowflake, FastAPI, Python, Pandas, Chart.js.
 
 ---

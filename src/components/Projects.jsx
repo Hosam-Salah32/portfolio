@@ -13,15 +13,25 @@ export default function Projects() {
         {projects.map((p) => (
           <article
             key={p.title}
-            className="glass-card p-6 flex flex-col hover:-translate-y-1"
+            className={`glass-card p-6 flex flex-col hover:-translate-y-1 ${
+              p.image ? 'sm:col-span-2' : ''
+            }`}
           >
             {p.image && (
-              <img
-                src={p.image}
-                alt={p.imageAlt ?? `${p.title} interface`}
-                loading="lazy"
-                className="mb-5 -mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 object-cover object-top aspect-[16/10]"
-              />
+              <a
+                href={p.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View full ${p.title} screenshot`}
+                className="mb-5 block overflow-hidden rounded-lg border border-slate-700 bg-white"
+              >
+                <img
+                  src={p.image}
+                  alt={p.imageAlt ?? `${p.title} interface`}
+                  loading="lazy"
+                  className="block w-full transition-transform duration-500 hover:scale-[1.015]"
+                />
+              </a>
             )}
             <p className="outcome-metric text-lg leading-snug">{p.outcome}</p>
             <div className="mt-3 flex items-start justify-between gap-3">
