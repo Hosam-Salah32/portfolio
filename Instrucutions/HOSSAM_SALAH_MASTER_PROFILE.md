@@ -71,6 +71,7 @@ from raw, inconsistent operational data to decisions executives actually act on.
   Volume is not always good — past a threshold, added visits force staffing
   hours the clinic cannot fill to 100% utilisation, so the model also shows
   when *cutting* visits protects margin.
+  **Outcome: staff utilisation raised from ~80–85% to ~90–95%.**
 - **Data engineering & automation:** Scripted Python ETL workflows automating 5+
   manual reporting processes (10+ hours/week saved); optimized Snowflake schema
   design for a 40% query-performance gain.
@@ -115,8 +116,7 @@ and impact metrics. Pull whichever depth the medium needs.
 - **Business framing (lead with this, not the model internals):** the point is
   the intervention, not the prediction. Flagged appointments get either a
   confirmation call or a double-booked slot, converting would-be empty slots
-  into billable visits. Outcome: protected revenue and higher staff
-  utilisation. No percentage figure available — do not invent one.
+  into billable visits. **Outcome: 10% reduction in losses due to no-shows.**
 
 ### 4.3 Revenue Cycle Management (RCM) Analytics Pipeline
 - **One-liner:** End-to-end RCM data pipeline and Power BI dashboard giving a
@@ -266,7 +266,10 @@ and impact metrics. Pull whichever depth the medium needs.
 
 Drop these into bullets, summaries, or interview answers as needed:
 
-- $70K in missing copay revenue identified.
+- $70K in missing copay revenue identified (identified, NOT recovered — the
+  shortfall was surfaced; collection did not follow. Never write "recovered").
+- Staff utilisation raised from ~80–85% to ~90–95% (break-even / volume model).
+- 10% reduction in losses due to patient no-shows.
 - 27% improvement in forecasting accuracy (10K+ weekly records).
 - $30K in inefficient acquisition spend identified and eliminated.
 - 113,725 visits / $7.25M in collected payments analysed across 33 clinics.
